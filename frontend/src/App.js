@@ -15,8 +15,6 @@ import { createContext, useState, useEffect } from "react";
 import getUserInfo from "./utilities/decodeJwt";
 
 import MbtaAlertsPage from "./components/pages/mbtaAlerts";
-
-import MbtaStopsPage from "./components/pages/mbtaStops";
 export const UserContext = createContext();
 //test change
 //test again
@@ -40,7 +38,7 @@ const App = () => {
           <Route exact path="/mbtaAlerts" 
           element={<MbtaAlertsPage />} />
 
-          <Route exact path="/mbtaStops" element={<MbtaStopsPage />} />
+          
         </Routes>
       </UserContext.Provider>
     </>
